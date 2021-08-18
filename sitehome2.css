@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(22, 14, 14);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    overflow: hidden;
+}
+.snaping{
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.snaping section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+#home{
+    height: 100vh;
+}
+header{
+    background-image: url(imgs/firebgm.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+}
+header .welcome{
+    font-size: 30px;
+    margin: 43px;
+    padding: 40px;
+    position: relative;
+    top: 25%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+.welcome p{
+    margin-top: 5px;
+    font-size: large;
+}
+h1 .intro{
+    font-size: 50px;
+}
+.intro{
+    color: rgb(235, 33, 67);
+}
+.leftnav,.account{
+    display: none;
+}
+header .mainhead{
+    display: flex;
+    padding: 18px;
+    width: 100%;
+    position: fixed;
+    align-content: center;
+    justify-content: space-around;
+    box-shadow: 0px 1px 8px #520101;
+    transition: all 0.3s ease;
+}
+.sticky{
+    padding: 20px;
+    background-color: rgb(235, 33, 67);
+}
+.mainhead .hire{
+    outline:white;
+    font-size: 18px;
+    background: #fcfcfc;
+    padding: 0px 15px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(235, 33, 67);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.hire:hover{
+    transform: scale(1.1);
+    color: turquoise;
+}
+.mainhead{
+    position: relative;
+    right: 17px;
+}
+nav{
+    position: relative;
+    top: 7px;
+    right: 14px;
+}
+.logo:hover{
+    border:none;
+}
+a{
+font-family: 'Lexend Exa', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 0px 25px;
+    align-content:flex-end;
+    transition: all 0.3s;
+}
+a:hover{
+    color: turquoise;
+    font-size: 20px;
+    border-bottom: 3px solid turquoise;
+}
+#about{
+    height: 100vh;
+    padding:80px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size:20px;
+}
+#about .heads{
+    position: relative;
+    top: 10px;
+    z-index: -1;
+}
+.descp{
+    text-align: center;
+}
+.descp p{
+    padding: 3px 0px;
+    font-size: large;
+}
+.myphoto{
+    z-index: -1;
+    clip-path: circle(30% at 50% 50%);
+}
+.heads{
+    color: turquoise;
+    text-decoration: underline;
+    font-family: 'Lexend Exa', sans-serif;
+    font-weight: 500;
+}
+
+.greeting{
+    color: violet;
+}
+#Education {
+    padding:80px 0px 20px 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        font-size: 20px;
+        background-color: rgb(26,26,26);
+}
+#Education .block{
+    width: 40%;
+}
+#Education .block .heads{
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.container .box{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(235, 33, 67);
+    transition: all 0.3s ;
+}
+.container .box:hover{
+    font-size: 21px;
+    background-color: rgb(235, 33, 67);
+}
+.container .bar{
+    border: 1.5px solid rgb(235, 33, 67);
+    margin: 5px;
+    border-radius: 10px;
+}
+.container .innerbgm{
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(235, 33, 67);
+    border-radius: 10px;
+}
+.percent{
+    float: right;
+}
+
+#work{
+    height: 100vh;
+    padding:60px 0px 20px 0px;
+        font-size: larger;
+}
+#work .heads{
+    padding: 20px;
+    text-align: center;
+}
+.slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#slidetext1{
+    color: rgb(131, 131, 131);
+}
+.slide img{
+    margin: 0px 20px 30px 80px;
+}
+.slide .disc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 80px 20px 20px;
+}
+.right,.left{
+    outline: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 280px;
+    background-color: turquoise;
+    color: white;
+    font-size: large;
+    text-align: center;
+    clip-path: circle(45% at 50% 50%);
+    transition: all 0.3s ease;
+}
+.right{
+    float: right;
+    right: 20px;
+}
+.left{
+    left: 20px;
+}
+.right:hover,.left:hover{
+    transform: scale(1.2);
+}
+.slide-number{
+    padding: 10px;
+    color: turquoise;
+}
+.slidetext{
+    padding: 10px;
+}
+#Contact{
+    padding:80px 0px 20px 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+    background-color: rgb(26, 26, 26);
+    background-size: cover;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+}
+form .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 20px;
+}
+form .heading{
+    text-align: center;
+    padding: 2px;
+    color:turquoise;
+    text-decoration: underline;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    background-color: rgb(48, 46, 46);
+    width: 100%;
+    padding: 10px;
+    margin: 5px 10px 0px 10px;
+    border: 1px solid turquoise;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+textarea{
+    height: 140px;
+}
+.oneliner{
+    margin: 20px;
+    width: 100%;
+}
+.area{
+    width: 100%;
+}
+input[type="submit"]{
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    width: 150px;
+    outline: none;
+    background: turquoise;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    left: 42%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    background-color: rgb(22, 14, 14);
+    border-radius: 1px;
+    border-color: turquoise;
+}
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    background-color: rgb(51, 182, 169);
+}
+#copyright{
+    background-color:rgb(22, 14, 14);
+    display: flex;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* footer text */
+.copy{
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+#copy2{
+    padding-bottom: 10px;
+}
+#special{
+    color: violet;
+}
+#special:hover{
+    border-color: violet;
+}
+#heart{
+    color: red;
+}
