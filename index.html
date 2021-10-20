@@ -61,7 +61,7 @@
         <p class="greeting">Yoroshiku onegai shimasu!</p>
     </section>
     <section id="Education">
-        <div class="block">
+        <div class="block" id="edu">
             <h2 class="heads">My Education</h2>
             <div class="container">
                 <div class="box">
@@ -78,37 +78,37 @@
                 </div>
             </div>
         </div>
-        <div class="block">
+        <div class="block" id="skill">
             <h2 class="heads">My skills</h2>
             <div class="container">
                 <div class="bar">
-                    <div class="innerbgm" style="width: 80%;">
-                        <span class="type">HTML</span>
-                        <span class="percent">80%</span>
-                    </div>
-                </div>
-                <div class="bar">
                     <div class="innerbgm" style="width: 75%;">
-                        <span class="type">CSS</span>
+                        <span class="type">HTML</span>
                         <span class="percent">75%</span>
                     </div>
                 </div>
                 <div class="bar">
-                    <div class="innerbgm" style="width:85%;">
+                    <div class="innerbgm" style="width: 70%;">
+                        <span class="type">CSS</span>
+                        <span class="percent">70%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="innerbgm" style="width:60%;">
                         <span class="type">C++</span>
+                        <span class="percent">60%</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="innerbgm" style="width:85%;">
+                        <span class="type">Design</span>
                         <span class="percent">85%</span>
                     </div>
                 </div>
                 <div class="bar">
-                    <div class="innerbgm" style="width:90%;">
-                        <span class="type">Design</span>
-                        <span class="percent">90%</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="innerbgm" style="width: 70%;">
-                        <span class="type">UI/UX</span>
-                        <span class="percent">70%</span>
+                    <div class="innerbgm" style="width: 60%;">
+                        <span class="type">Javascript</span>
+                        <span class="percent">60%</span>
                     </div>
                 </div>
             </div>
@@ -154,6 +154,15 @@
                         <p>An Completed project for Display of works, which you are watching right now ;).</p>
                     </div>
                 </div>
+                <div class="slide">
+                    <img src="imgs/todolist.png" alt="" width="635vw">
+                    <div class="disc">
+                        <h1 class="slide-number">Website development</h1>
+                        <p class="slidetext" id="slidetext1">-Personal project</p>
+                        <p class="slidetext" id="slidetext2">Using HTML, CSS and JS</p>
+                        <p>An Completed project for Dessigned to organise everything.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <button class="left" onclick="plusDivs(-1)">&#10094;</button>
@@ -186,63 +195,6 @@
         </div>
     </section>
 </div>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("slide");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "flex";
-        }
-        </script>
-        <script>
-            $('header').ripples({
-                resolution: 720,
-                dropRadius: 20,
-                perturbance: 0.04,
-            });
-        </script>
-        <script>
-            var typed=new Typed("h1 .intro",{
-                strings: ["Piyush Chittora","A Designer","A Web Developer"],
-                typedSpeed: 100,
-                backSpeed: 60,
-                loop:true
-            });
-            var typed=new Typed("h2 .intro",{
-                strings: ["Piyush Chittora","A Designer","A Web Developer"],
-                typedSpeed: 100,
-                backSpeed: 60,
-                loop:true
-            });
-        </script>
-        <script>
-            $(document).ready(function(){
-                $(".menu").click(function(){
-                    $(".mainhead .menucart").toggleClass("active");
-                });
-        });
-        </script>
-    <!-- <script>
-            $(document).ready(function(){
-                $(".snaping").ready(function(){
-                    $("section").ready(function(){
-                        $("#home").ready(function(){
-                            $(".mainhead").css("background-color","transparent")
-                        });
-                    });
-                });
-        });
-    </script> -->
+        <script src="app.js"></script>
 </body>
 </html>
