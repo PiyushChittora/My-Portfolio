@@ -1,489 +1,493 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-html{
-    scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html {
+  scroll-behavior: smooth;
 }
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
-body{
-    background-color: rgb(22, 14, 14);
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: large;
-    overflow: hidden;
-}
-.snaping{
-    scroll-behavior: smooth;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-.snaping::-webkit-scrollbar {
-    display: none;
+body {
+  background-color: rgb(22, 14, 14);
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  overflow: hidden;
 }
 .snaping {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-.snaping section{
-    height: 100vh;
-    scroll-snap-align: start;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
-#home{
-    height: 100vh;
+.snaping::-webkit-scrollbar {
+  display: none;
 }
-header{
-    background-image: url(imgs/firebgm.png);
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-content: center;
+.snaping {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-header .welcome{
-    font-size: 30px;
-    margin: 83px;
-    position: relative;
-    top: 25%;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
+.snaping section {
+  height: 100vh;
+  scroll-snap-align: start;
 }
-.welcome p{
-    margin-top: 5px;
-    font-size: large;
+#home {
+  height: 100vh;
 }
-h1 .intro{
-    font-size: 50px;
+header {
+  background-image: url(imgs/firebgm.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: center;
 }
-.intro{
-    color: rgb(235, 33, 67);
+header .welcome {
+  font-size: 30px;
+  margin: 83px;
+  position: relative;
+  top: 25%;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
 }
-.menu,.menucart,.account{
-    display: none;
+.welcome p {
+  margin-top: 5px;
+  font-size: large;
 }
-header .mainhead{
-    display: flex;
-    padding: 18px;
-    width: 100%;
-    position: fixed;
-    align-content: center;
-    z-index: 100000;
-    justify-content: space-around;
-    box-shadow: -8px 1px 8px #520101;
-    transition: all 0.3s ease;
+h1 .intro {
+  font-size: 50px;
 }
-.sticky{
-    padding: 20px;
-    background-color: rgb(235, 33, 67);
+.intro {
+  color: rgb(235, 33, 67);
 }
-.mainhead .hire{
-    outline:white;
-    font-size: 18px;
-    background: #fcfcfc;
-    padding: 0px 15px;
-    border: none;
-    border-radius: 5px;
-    color: rgb(235, 33, 67);
-    cursor: pointer;
-    transition: all 0.3s;
+.menu,
+.menucart,
+.account {
+  display: none;
 }
-.hire:hover{
-    transform: scale(1.1);
-    color: turquoise;
+header .mainhead {
+  display: flex;
+  padding: 18px;
+  width: 100%;
+  position: fixed;
+  align-content: center;
+  z-index: 100000;
+  justify-content: space-between;
+  box-shadow: 0px 1px 8px #520101;
+  transition: all 0.3s ease;
 }
-.mainhead{
-    position: relative;
-    right: 17px;
+.sticky {
+  padding: 20px;
+  background-color: rgb(235, 33, 67);
 }
-nav{
-    position: relative;
-    top: 7px;
-    right: 14px;
+.mainhead .hire {
+  outline: white;
+  font-size: 18px;
+  background: #fcfcfc;
+  padding: 0px 15px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(235, 33, 67);
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.logo:hover{
-    border:none;
+.hire:hover {
+  transform: scale(1.1);
+  color: turquoise;
 }
-a{
-font-family: 'Lexend Exa', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-    padding: 0px 25px;
-    align-content:flex-end;
-    cursor: pointer;
-    transition: all 0.3s;
+nav {
+  position: relative;
+  top: 7px;
+  right: 14px;
 }
-a:hover{
-    color: turquoise;
-    font-size: 20px;
-    border-bottom: 3px solid turquoise;
+.logo:hover {
+  border: none;
 }
-#about{
-    height: 100vh;
-    padding:80px 0px 20px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-size:20px;
+a {
+  font-family: "Lexend Exa", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 0px 25px;
+  align-content: flex-end;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-#about .heads{
-    position: relative;
-    top: 10px;
-    z-index: -1;
+a:hover {
+  color: turquoise;
+  font-size: 20px;
+  border-bottom: 3px solid turquoise;
 }
-.descp{
-    text-align: center;
+#about {
+  height: 100vh;
+  padding: 80px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
 }
-.descp p{
-    padding: 3px 20px;
-    font-size: large;
+#about .heads {
+  position: relative;
+  top: 10px;
+  z-index: -1;
 }
-.myphoto{
-    z-index: -1;
-    clip-path: circle(30% at 50% 50%);
+.descp {
+  text-align: center;
 }
-.heads{
-    color: turquoise;
-    text-decoration: underline;
-    font-family: 'Lexend Exa', sans-serif;
-    font-weight: 500;
+.descp p {
+  padding: 3px 20px;
+  font-size: large;
+}
+.myphoto {
+  z-index: -1;
+  clip-path: circle(30% at 50% 50%);
+}
+.heads {
+  color: turquoise;
+  text-decoration: underline;
+  font-family: "Lexend Exa", sans-serif;
+  font-weight: 500;
 }
 
-.greeting{
-    color: violet;
+.greeting {
+  color: violet;
 }
 #Education {
-    padding:80px 0px 20px 0px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-        font-size: 20px;
-        background-color: rgb(26,26,26);
+  padding: 80px 0px 20px 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  background-color: rgb(26, 26, 26);
 }
-#Education .block{
-    width: 40%;
+#Education .block {
+  width: 40%;
 }
-#Education .block .heads{
-    text-align: center;
-    padding: 0px 20px 0px 20px;
+#Education .block .heads {
+  text-align: center;
+  padding: 0px 20px 0px 20px;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-.container .box{
-    padding: 13px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 1.5px solid rgb(235, 33, 67);
-    transition: all 0.25s ;
+.container .box {
+  padding: 13px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(235, 33, 67);
+  transition: all 0.25s;
 }
-.box p{
-    font-size: 17px;
+.box p {
+  font-size: 17px;
 }
-.container .box:hover{
-    transform: scale(1.03);
-    background-color: rgb(235, 33, 67);
+.container .box:hover {
+  transform: scale(1.03);
+  background-color: rgb(235, 33, 67);
 }
-.container .bar{
-    border: 1.5px solid rgb(235, 33, 67);
-    margin: 5px;
-    border-radius: 10px;
+.container .bar {
+  border: 1.5px solid rgb(235, 33, 67);
+  margin: 5px;
+  border-radius: 10px;
 }
-.container .innerbgm{
-    padding: 5px;
-    margin: 5px;
-    background-color: rgb(235, 33, 67);
-    border-radius: 10px;
+.container .innerbgm {
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(235, 33, 67);
+  border-radius: 10px;
 }
-.percent{
-    float: right;
+.percent {
+  float: right;
 }
 
-#work{
-    height: 100vh;
-    padding:60px 0px 20px 0px;
-        font-size: larger;
+#work {
+  height: 100vh;
+  padding: 60px 0px 20px 0px;
+  font-size: larger;
 }
-#work .heads{
-    padding: 20px;
-    text-align: center;
+#work .heads {
+  padding: 20px;
+  text-align: center;
 }
-.slide{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.slide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#slidetext1{
-    color: rgb(131, 131, 131);
+#slidetext1 {
+  color: rgb(131, 131, 131);
 }
-.slide img{
-    margin: 0px 20px 30px 80px;
+.slide img {
+  margin: 0px 20px 30px 80px;
 }
-.slide .disc{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px 80px 20px 20px;
+.slide .disc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 80px 20px 20px;
 }
-.right,.left{
-    outline: none;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    bottom: 280px;
-    background-color: turquoise;
-    color: white;
-    font-size: large;
-    text-align: center;
-    clip-path: circle(45% at 50% 50%);
-    transition: all 0.3s ease;
+.right,
+.left {
+  outline: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 280px;
+  background-color: turquoise;
+  color: white;
+  font-size: large;
+  text-align: center;
+  clip-path: circle(45% at 50% 50%);
+  transition: all 0.3s ease;
 }
-.right{
-    float: right;
-    right: 20px;
+.right {
+  float: right;
+  right: 20px;
 }
-.left{
-    left: 20px;
+.left {
+  left: 20px;
 }
-.right:hover,.left:hover{
-    transform: scale(1.2);
+.right:hover,
+.left:hover {
+  transform: scale(1.2);
 }
-.slide-number{
-    padding: 10px;
-    color: turquoise;
+.slide-number {
+  padding: 10px;
+  color: turquoise;
 }
-.slidetext{
-    padding: 10px;
+.slidetext {
+  padding: 10px;
 }
-#Contact{
-    padding:80px 0px 20px 0px;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: large;
-    background-color: rgb(26, 26, 26);
-    background-size: cover;
+#Contact {
+  padding: 80px 0px 20px 0px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  background-color: rgb(26, 26, 26);
+  background-size: cover;
 }
-#Contact p{
-    text-align: center;
+#Contact p {
+  text-align: center;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
-form .input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    right: 10px;
-    width: 800px;
+form .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 10px;
+  width: 800px;
 }
-form .heading{
-    text-align: center;
-    padding: 2px;
-    color:turquoise;
-    text-decoration: underline;
+form .heading {
+  text-align: center;
+  padding: 2px;
+  color: turquoise;
+  text-decoration: underline;
 }
 input[type="text"],
 input[type="email"],
-textarea{
-    font-family: 'Raleway', sans-serif;
-    font-size: large;
-    background-color: rgb(48, 46, 46);
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0px 0px 10px;
-    border: 1px solid turquoise;
-    transition: all 0.3s;
-    border-radius: 10px;
-    z-index: -300;
+textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  background-color: rgb(48, 46, 46);
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px 0px 10px;
+  border: 1px solid turquoise;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: -300;
 }
-textarea{
-    height: 140px;
+textarea {
+  height: 140px;
 }
-.oneliner{
-    margin: 10px;
-    width: 100%;
+.oneliner {
+  margin: 10px;
+  width: 100%;
 }
-.area{
-    width: 100%;
-    margin: 10px;
+.area {
+  width: 100%;
+  margin: 10px;
 }
-input[type="submit"]{
-    font-family: 'Raleway', sans-serif;
-    font-size: large;
-    width: 150px;
-    outline: none;
-    background: turquoise;
-    border: none;
-    padding: 10px;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s;
+input[type="submit"] {
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  width: 150px;
+  outline: none;
+  background: turquoise;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
-textarea:focus{
-    background-color: rgb(22, 14, 14);
-    border-radius: 1px;
-    border-color: turquoise;
+textarea:focus {
+  background-color: rgb(22, 14, 14);
+  border-radius: 1px;
+  border-color: turquoise;
 }
-input[type="submit"]:hover{
-    transform: scale(1.1);
-    background-color: rgb(51, 182, 169);
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  background-color: rgb(51, 182, 169);
 }
-#copyright{
-    background-color:rgb(22, 14, 14);
-    display: flex;
-    position: relative;
-    top: 20px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#copyright {
+  background-color: rgb(22, 14, 14);
+  display: flex;
+  position: relative;
+  top: 20px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* footer text */
-.copy{
-    padding: 10px 0px 0px 0px;
+.copy {
+  padding: 10px 0px 0px 0px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+#copy2 {
+  padding-bottom: 10px;
+}
+#special {
+  color: violet;
+}
+#special:hover {
+  border-color: violet;
+}
+#heart {
+  color: red;
+}
+@media only screen and (max-width: 1000px) {
+  .mainhead nav,
+  .mainhead .hire {
+    display: none;
+  }
+  .mainhead {
+    height: 75px;
+  }
+  .mainhead .logo {
+    position: absolute;
+    left: 10%;
+  }
+  .mainhead .menu {
+    display: inline;
+    position: absolute;
+    right: 10%;
+    background-color: transparent;
+    border: none;
+    z-index: 10000000000;
+  }
+  .mainhead .menucart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(22, 14, 14, 0.9);
+    right: -100%;
+    top: 0;
+    z-index: 1000000000;
+    transition: all 0.3s ease;
+  }
+  .mainhead .menucart.active {
+    right: 0;
+  }
+  .menucart a {
+    margin: 30px;
+  }
+  .slide {
     width: 100%;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #work {
+    height: 100vh;
+  }
+  .slide img {
+    margin: 0px 20px;
+    max-width: 100%;
+    height: 40vh;
+  }
+  .slide .disc {
     text-align: center;
-}
-#copy2{
-    padding-bottom: 10px;
-}
-#special{
-    color: violet;
-}
-#special:hover{
-    border-color: violet;
-}
-#heart{
-    color: red;
-}
-@media only screen and (max-width: 1000px){
-    .mainhead nav,.mainhead .hire{
-        display: none;
-    }
-    .mainhead{
-        height: 75px;
-    }
-    .mainhead .logo{
-        position: absolute;
-        left: 10%;
-    }
-    .mainhead .menu{
-        display: inline;
-        position: absolute;
-        right: 10%;
-        background-color: transparent;
-        border: none;
-        z-index: 10000000000;
-    }
-    .mainhead .menucart{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px;
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        background: rgba(22, 14, 14, 0.9);
-        right: -100%;
-        top: 0;
-        z-index: 1000000000;
-        transition: all 0.3s ease;
-    }
-    .mainhead .menucart.active{
-        right: 0;
-    }
-    .menucart a{
-        margin: 30px;
-    }
-    .slide{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    #work{
-        height: 100vh;
-    }
-    .slide img{
-        margin: 0px 20px;
-        max-width:100%;
-        height: 40vh;
-    }
-    .slide .disc{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
-    }
-    .box ,.innerbgm{
-        font-size: medium;
-    }
-    .welcome p,.welcome h1{
-        font-size: 20px;
-    }
-    h1 .intro{
-        font-size: 25px;
-    }
-    form .input{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 70vw;
-    }
-    textarea{
-        height: auto;
-        margin-top: 0px;
-    }
-    .oneliner{
-        width: 100%;
-    }
-    .area{
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 890px){
-    .box p{
-        font-size: small;
-    }
-}
-@media only screen and (max-width: 720px){
-    #Education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .box,
+  .innerbgm {
+    font-size: medium;
+  }
+  .welcome p,
+  .welcome h1 {
+    font-size: 20px;
+  }
+  h1 .intro {
+    font-size: 25px;
+  }
+  form .input {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    }
-    #Education .block{
-        width: auto;
-    }
+    width: 70vw;
+  }
+  textarea {
+    height: auto;
+    margin-top: 0px;
+  }
+  .oneliner {
+    width: 100%;
+  }
+  .area {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .box p {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #Education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #Education .block {
+    width: auto;
+  }
 }
