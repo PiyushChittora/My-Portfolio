@@ -22,6 +22,13 @@ body{
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
+.snaping::-webkit-scrollbar {
+    display: none;
+}
+.snaping {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 .snaping section{
     height: 100vh;
     scroll-snap-align: start;
@@ -68,7 +75,7 @@ header .mainhead{
     align-content: center;
     z-index: 100000;
     justify-content: space-around;
-    box-shadow: 0px 1px 8px #520101;
+    box-shadow: -8px 1px 8px #520101;
     transition: all 0.3s ease;
 }
 .sticky{

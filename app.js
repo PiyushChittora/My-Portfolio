@@ -18,8 +18,8 @@ function showDivs(n) {
 }
 $('header').ripples({
     resolution: 720,
-    dropRadius: 20,
-    perturbance: 0.04,
+    dropRadius: 10,
+    perturbance: 0.02,
 });
 var typed = new Typed("h1 .intro", {
     strings: ["Piyush Chittora", "A Designer", "A Web Developer"],
