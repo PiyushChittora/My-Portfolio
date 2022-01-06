@@ -38,3 +38,7 @@ $(document).ready(function () {
         $(".mainhead .menucart").toggleClass("active");
     });
 });
+
+gsap.from('.welcome h1',{opacity:0,duration:1,y:-50,delay:0.5})
+gsap.from('.welcome p',{opacity:0,duration:1,y:-50})
+gsap.from('.descp',{opacity:0,duration:1,y:-50})
